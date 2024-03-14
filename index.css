@@ -1,0 +1,227 @@
+*{
+    font-family: "Kode Mono", monospace; 
+    margin: 0px;
+    padding: 0px;
+}
+.container{
+    height: 100vh;
+    width: 100%;
+    position: relative; /* placeed at excat location*/
+    
+}
+.navbar{
+    display: flex; /* for making elements side by side block to inline*/
+    width: 85%;
+    justify-content: space-between; /* to make space in bwt contents*/
+    margin-left: 100px;  /* to move from left*/
+    align-items: center; /*to make iteams vertivaly center within the navbar*/
+}
+#logo{
+    width: 100px;
+}
+.listiteam{
+    display: inline-block; /* for making elements side by side block to inline*/
+    list-style: none;   /* list styling*/
+    margin: 10px 20px;  /* to move from left*/
+}
+.link{
+    text-decoration: none; /*to remove text box-decoration*/
+    color: black;
+    font-size: larger;
+}
+.link:hover{
+    color: red;
+}
+#hero{
+    margin-left: 5%;
+    margin-top: 15%;
+}
+.title h1{
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+#s1{
+    color: rgb(0, 165, 110);
+}
+#download{
+    text-decoration: none;
+    font-size: 20px;
+    color: aliceblue;
+    background-color: black;
+    padding: 8px;
+    border-radius: 10px;
+    margin-top:10px;
+    display: inline-block; /* it gives a imaginary border around the contant wch helps to move around*/
+}
+.img{
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    right: 30px;
+    bottom: 0px;
+}
+.img-gr{
+    position: absolute;
+    bottom: 0px;
+    height: 100%;
+    left: 50%;
+    transform: translate(-50%);    /* for avoiding scroll*/
+    transition: bottom 1s, left 2s;     /* for tansition time and valu*/
+}
+.img:hover #girl{
+    left:40%;
+}
+.img:hover #shape{
+    bottom: 50px;
+}
+#about{
+    margin: 20% 8% 0% 5%;
+}
+.heading{
+    text-align: center;
+}
+.heading h2{
+    font-size: 50px;
+}
+.intro{
+    color: rgb(9, 167, 167);
+    font-size: 25px;
+}
+.about-content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:30px
+}
+.about-img img{
+    width: 80%;
+}
+.about-details{
+    margin-top: 25px;
+    font-size: 20px;
+    font-weight: 500;
+}
+.about-details p{
+    text-align: justify;
+    
+}
+.info{
+    margin-top: 30px;
+}
+.info-box{
+    margin-bottom: 35px;
+}
+.info-box span{
+    margin-left: 15px;
+}
+    /*skills*/
+#skill{
+    margin: 5% 8% 0% 5%;
+}
+.skill-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 2rem;
+    margin-top: 20px;
+}
+.skill-img img{
+    width: 90%;
+    margin-top: -85px;
+}
+.bar-container{
+    display: flex;
+    justify-content: space-between;
+    padding:1rem 0px;
+    margin-bottom: 2rem;
+    align-items: center;
+    position: relative;
+}
+.progress-bar h1{
+    text-transform: uppercase;
+}
+.bar-container span{
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+.bar-box{
+    background-color: black;
+    width: 100%;
+    height: .5rem;
+    position: absolute;
+    border-radius: 10px;
+    bottom: 0px;
+    left: 0;
+}
+.html-bar{
+    background-color: orange;
+    width: 95%;
+}
+.css-bar{
+    background-color: orange;
+    width: 88%;
+}
+.js-bar{
+    background-color: orange;
+    width: 89%;
+}
+.reat-bar{
+    background-color: orange;
+    width: 85%;
+}
+
+.icon-set{
+    display: flex;
+    justify-content: center; /*verticalu center*/
+    align-items: center;    /*horizontaly center*/
+    margin-top: 3%; 
+}
+.icon ,.up-arrow{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+.icon i {
+    font-size: 30px;
+    color: black;
+}
+.icon:hover {
+    background-image: linear-gradient(to top left,yellow, #da3434 );
+}
+.icon:hover i {
+    color: aliceblue;
+    animation: shake 0.75s;
+}
+@keyframes shake {
+    10%{
+        transform: rotate(15deg);
+    }
+    20%{
+        transform: rotate(-15deg);
+    }
+    30%{
+        transform: rotate(15deg);
+    }
+    40%{
+        transform: rotate(-15deg);
+    }
+}
+footer{
+    margin: 5% 0px ;
+}
+footer p{
+    text-align:center;
+    font-weight: 500;
+    font-size: 18px;
+}
+.up-arrow{
+    float: right;
+    background-image: linear-gradient(to top left,yellow, #da3434 );
+}
+.up-arrow a{
+    font-size: 25px;
+    color: aliceblue;
+}
